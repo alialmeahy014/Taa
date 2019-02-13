@@ -104,14 +104,14 @@ client.user.setStatus("dnd")
 });
 
 var adminprefix = '$'
-const developers = ['435182410531864577'] //الاي دى حقك
+const developers = ['510854979364585475'] //الاي دى حقك
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
      
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
-      message.channel.send(`BY !RG , ZEUS#9999   ${argresult}**`)
+      message.channel.send(`BY The 1BOSS   ${argresult}**`)
   } else
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
